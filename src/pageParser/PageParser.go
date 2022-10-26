@@ -167,5 +167,5 @@ func GWHCrawler(path string) {
 			info.DNAFile, info.GFFFile, info.RNAFile, info.ProteinFile)
 		file.Write([]byte(str))
 	}
-	fmt.Println("Done! 用时: ", time.Since(start))
+	fmt.Println("\rDone! 用时: ", time.Since(start))
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"BIGCrawler/src/GsaCrawler"
 	"BIGCrawler/src/pageParser"
 	"flag"
 	"fmt"
@@ -63,16 +64,22 @@ func main() {
 		fmt.Scanln()
 		os.Exit(0)
 	}
-	go func() {
-		for {
-			for _, v := range `\|/` {
-				fmt.Printf("\r%c", v)
-				time.Sleep(100 * time.Millisecond)
+
+	if *gsa && *gwh {
+		panic("Can not select both!")
+	} else if *gwh {
+		go func() {
+			for {
+				for _, v := range `\|/` {
+					fmt.Printf("\r%c", v)
+					time.Sleep(100 * time.Millisecond)
+				}
 			}
-		}
-	}()
-	if *gwh {
+		}()
 		pageParser.GWHCrawler(*path)
+	} else if *gsa {
+		gsa := GsaCrawler.GSA{}
+		gsa.GSACrawler(*path)
 	}
 
 }
