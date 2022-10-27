@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/yueyue970506/BIGCrawler/"
-	"github.com/yueyue970506/BIGCrawler/"
+	"BIGCrawler/src/pageParser"
+	"BIGCrawler/src/GsaCrawler"
 	"flag"
 	"fmt"
 	"os"
