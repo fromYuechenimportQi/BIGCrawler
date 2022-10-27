@@ -1,4 +1,4 @@
-module github.com/yueyue970506/BIGCrawler/
+module BIGCrawler
 
 go 1.19
 
