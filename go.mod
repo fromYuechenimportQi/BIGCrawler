@@ -26,3 +26,5 @@ require (
 	gorm.io/driver/sqlite v1.4.3 // indirect
 	gorm.io/gorm v1.24.0 // indirect
 )
+
+replace BIGCrawler => github.com/yueyue970505/BIGCrawler // indirect
