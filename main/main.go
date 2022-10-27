@@ -1,10 +1,10 @@
 package main
 
 import (
-	"BIGCrawler/src/pageParser"
-	"BIGCrawler/src/GsaCrawler"
 	"flag"
 	"fmt"
+	"github.com/yueyue970506/BIGCrawler/src/GsaCrawler"
+	"github.com/yueyue970506/BIGCrawler/src/pageParser"
 	"os"
 	"time"
 )

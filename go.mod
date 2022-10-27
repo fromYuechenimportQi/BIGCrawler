@@ -1,4 +1,4 @@
-module BIGCrawler
+module github.com/yueyue970506/BIGCrawler
 
 go 1.19
 
@@ -27,4 +27,3 @@ require (
 	gorm.io/gorm v1.24.0 // indirect
 )
 
-replace BIGCrawler => github.com/yueyue970506/BIGCrawler // indirect
