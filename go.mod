@@ -1,4 +1,4 @@
-module GOver_BIGCrawler
+module BIGCrawler
 
 go 1.19
 
