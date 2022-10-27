@@ -27,4 +27,4 @@ require (
 	gorm.io/gorm v1.24.0 // indirect
 )
 
-replace BIGCrawler => github.com/yueyue970505/BIGCrawler // indirect
+replace BIGCrawler => github.com/yueyue970506/BIGCrawler // indirect
